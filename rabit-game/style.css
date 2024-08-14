@@ -20,7 +20,7 @@ body {
   }
 
   .layer-1 {
-    background: rgba(255, 255, 255, 0.39);
+    background: rgba(255, 255, 255, 0.096);
     bottom: 0;
     height: 450px;
     position: absolute;
@@ -30,7 +30,7 @@ body {
   }
 
   .layer-2 {
-    background: white;
+    background: rgba(255, 255, 255, 0.082);
     bottom: 0;
     height: 450px;
     position: absolute;
@@ -40,7 +40,8 @@ body {
   }
 
   .layer-3 {
-    background: pink;
+    background: rgb(139, 69, 3);
+ 
     bottom: 0;
     height: 400px;
     left: 0;
@@ -179,4 +180,39 @@ body {
     animation-name: blink;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+@keyframes blink {
+    0%{
+        height: 4px;
+    }
+    5%{
+        transform: translate(0px, 2px);
+        height: 1px;
+    }
+    10%{
+        transform: translate(0px, 0px);
+        height: 4px;
+    }
+}
+.head_eye--left{
+    left: 30px;
+}
+
+.head_eye--right{
+    right: 30px;
+}
+.grass{
+    background: rgb(14, 129, 43);
+    height: 20px;
+    width: 100%;
+}
+.zigzag {
+    background: linear-gradient(135deg, rgb(14, 129, 43) 25%, transparent 25%) -50px 0,
+        linear-gradient(-135deg, rgb(14, 129, 43) 25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, rgb(139, 69, 3) 25%, transparent 25%),
+        linear-gradient(-45deg, rgb(139, 69, 3) 25%, transparent 25%);
+    background-size: 33px 30px;
+    background-color: rgb(66, 33, 2);
+    height: 30px;
+    width: 100%;
 }
