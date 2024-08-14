@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Rabit Game</title>
-    <style>
+    <!-- <style>
         body{
             counter-reset:game; /* crea o reinicia un contador */
             display: grid;
@@ -32,12 +32,38 @@
         .total-count::after{
             content: counter(game);/* inserta el contenido generado (usar con pseudoelemento) */
         } /* counter: funcion que agrega el valor de un contador a un elemento */
-    </style>
+    </style> -->
 </head>
 <body>
     <div class="phone">
-        <div class="layer-1"></div>
-        <div class="layer-2"></div>
+         <!--CONEJO 1-->
+         <div class="layer-1">
+            <input type="checkbox">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head_eye head_eye--left"></div>
+                <div class="head_eye head_eye--right"></div>
+            </div>
+        </div>
+         <!--CONEJO 2-->
+         <div class="layer-2">
+            <input type="checkbox">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head_eye head_eye--left"></div>
+                <div class="head_eye head_eye--right"></div>
+            </div>
+        </div>
+        <div class="layer-3">
+            <div class="grass"></div>
+            <div class="zigzag"></div>
+        </div>
         <div class="layer-3"></div>
         <div class="layer-4"></div>
         <div class="layer-5"></div>

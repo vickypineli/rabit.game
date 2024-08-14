@@ -1,10 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&family=Poppins:wght@300&display=swap');
 body {
-    display: grid;
-    height: 100vh;
     margin: 0;
-    place-items: center;
+    height: 100vh;
     width: 100%;
+    display: grid;
+    place-items: center;
+    counter-reset: score;
   }
 
   .phone {
@@ -19,7 +20,7 @@ body {
   }
 
   .layer-1 {
-    background: white;
+    background: rgba(255, 255, 255, 0.39);
     bottom: 0;
     height: 450px;
     position: absolute;
@@ -119,3 +120,63 @@ body {
     width: 120px;
     z-index: 10;
   }
+  /* =====orejas de los conejos==== */
+  .left-ear--outer{
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.left-ear--inner{
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+.right-ear--outer{
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.right-ear--inner{
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+.head{
+    background: white;
+    border-radius: 50%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    width: 80px;
+}
+.head_eye{
+    background: black;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
